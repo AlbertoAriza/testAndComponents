@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--META PARA LA DESCRIPCIÓN QUE APARECE EN GOOGLE CUANDO TE BUSCAN-->
+    <meta name="description" content="Descripción en Google" />
+
+    <!--META PARA AUTOR DE LA PÁGINA-->
+    <meta name="author" content="Jose Aberto Ariza" />
+
+    <!--META PARA LAS KEYWORDS DE LA PÁGINA-->
+    <meta
+      name="keywords"
+      content="palabra clave 1, palabra clave 2, palabra clave 3, etc"
+    />
+
+    <!--META PARA INDICACIONES AL ARCHIVO ROBOTS-->
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
+
+    <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN FACEBOOK-->
+    <meta property="og:image" content="url de la imagen" />
+    <meta property="og:title" content="titulo para la descripción" />
+    <meta property="og:description" content="descripción para facebook" />
+
+    <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN TWITTER-->
+    <meta property="twitter:image" content="url de la imagen" />
+    <meta property="twitter:title" content="titulo para la descripción" />
+    <meta property="twitter:description" content="descripción para facebook" />
+
+    <!--LINK PARA INSERTAR FAVICON-->
+    <link
+      rel="shortcut icon"
+      href="highSchoolStories/favicon-128x128.png"
+      type="image/x-icon"
+    />
+
+    <!--LINK A LA PÁGINA DE ESTILOS CSS-->
+    <link rel="stylesheet" href="css/COMPONENT_-_lesStoryScreen.css" />
+
+    <!--TÍTULO DE LA PÁGINA (APARECE EN EL NAVEGADOR ARRIBA)-->
+    <title>LondonEye - HighSchool Stories</title>
+  </head>
+
+  <!--  
+   ___  ___  _____   __
+  | _ )/ _ \|   \ \ / /
+  | _ \ (_) | |) \ V / 
+  |___/\___/|___/ |_| 
+  -->
+  <body>
+
+    <main class="gameBoard"> <!-- Este es el container que no se tocará nunca. Demarca la pantalla del juego.-->
+      <section id="storyContainer"> <!--  Este es el container que contiene la foto en la historia. 
+                                          Tan grande como #gameBoard-->
+
+        <div id="storyTellingContainer">
+
+          <!-- Foto del personaje de la izquierda. -->
+          <div class="storyImgContainer" id="storyImgContainer--left">
+            <img src="" alt="" id="storyImgLeft" />
+          </div>
+
+          <!--  Container del texto de la charla. -->
+          <div id="storyTextContainer">
+            <p class="bocadilloToLeft" id="storyText"></p>
+            </div>
+
+          <!-- Foto del personaje de la derecha. -->
+          <div class="storyImgContainer" id="storyImgContainer--right">
+            <img src="" alt="" id="storyImgRight" />
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <section id="startScreenSection">
+      
+    </section>
+
+    <script src="js/CONTENT_-_lesBase.js"></script>
+    <script src="js/CONTENT_-_lesDialogsAndQuestions_MyLastHoliday.js"></script>
+    <script src="js/COMPONENT_-_lesStoryScreen.js"></script>
+  </body>
+</html>

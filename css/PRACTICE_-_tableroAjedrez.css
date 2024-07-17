@@ -1,0 +1,61 @@
+#tablero {
+  height: 640px;
+  width: 640px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+.casilla {
+  width: 80px;
+  height: 80px;
+  display: inline;
+  float: left;
+}
+.black {
+  background-color: black;
+}
+img {
+  position: absolute;
+}
+#alfil {
+  top: 400px;
+  left: 80px;
+  height: 80px;
+}
+#rey1 {
+  top: 240px;
+  left: 320px;
+  height: 80px;
+}
+#rey2 {
+  top: 320px;
+  left: 480px;
+  height: 80px;
+}
+
+/*TABLERO CON FLEX*/
+#tableroFlex {
+  width: 640px;
+  height: 640px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.casillaFlex {
+  width: 80px;
+  height: 80px;
+}
+
+/*TABLERO CON GRID*/
+#tableroGrid {
+  display: grid;
+  width: 640px;
+  margin: auto;
+  grid-template-rows: repeat(8, 80px);
+  grid-template-columns: repeat(8, 80px);
+  border: 1px solid black;
+  position: relative;
+}

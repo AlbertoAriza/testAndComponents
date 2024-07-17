@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 100px;
+    background: linear-gradient(to right, #4b78f3, #010e97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1{
+        color: white;
+    }
+}
+
+nav{
+    background-color: red;
+}
+
+main{
+    background-color: green;
+
+    #article--movements{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .movement--row{
+            background-color: white;
+            padding: 10px;
+            width: 400px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .movement--row--type--deposit{
+                background: linear-gradient(to right, rgb(1, 190, 1), green);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            .movement--row--type--withdrawal{
+                background: linear-gradient(to right, rgb(255, 112, 112), red);
+                color: white;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    article > form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: linear-gradient(to right, white, rgb(226, 226, 226));
+        align-items: center;
+        padding: 30px;
+
+        input{
+            width: 100px;
+            border-radius: 15px;
+        }
+        
+        button{
+            width: 50px;
+        }
+
+        .formContent{
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(at top left, rgb(122, 122, 248), blue);
+        }
+
+    }
+    .userDataShow{
+        display: flex;
+        div{
+            width: 50%;
+            border: 1px solid red;
+            background-color: white;
+        }
+        button{
+            width: 50px;
+        }
+    }
+}
+.oculto{
+    opacity: 0;
+    transition: all 1s;
+}
+
+footer{
+    background-color: yellow;
+}

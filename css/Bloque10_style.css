@@ -1,0 +1,60 @@
+body{
+  background-color: rgb(94, 94, 253);
+  height: 100svh;
+}
+
+#parrafo1 {
+  background-color: blue;
+  color: white;
+}
+
+/* #pantallaGeneral{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    border: solid 1px;
+} */
+
+#imgIzd {
+  float: right;
+}
+
+.parrafoGeneral {
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+  border: solid violet 1px;
+}
+
+table,
+td,
+th {
+  border: solid 1px black;
+}
+
+.seccionTesteo {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.seccionTesteada {
+  background-color: red;
+  color: white; /* 
+    position: absolute; */
+  padding: 50px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.buy {
+  width: 200px;
+  height: 40px;
+}
+.poll {
+  width: 200px;
+  height: 40px;
+}

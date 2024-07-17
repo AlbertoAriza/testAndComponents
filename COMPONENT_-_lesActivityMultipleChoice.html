@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--META PARA LA DESCRIPCIÓN QUE APARECE EN GOOGLE CUANDO TE BUSCAN-->
+  <meta name="description" content="Descripción en Google" />
+
+  <!--META PARA AUTOR DE LA PÁGINA-->
+  <meta name="author" content="Jose Aberto Ariza" />
+
+  <!--META PARA LAS KEYWORDS DE LA PÁGINA-->
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3, etc" />
+
+  <!--META PARA INDICACIONES AL ARCHIVO ROBOTS-->
+  <meta name="robots" content="noindex" />
+  <meta name="robots" content="nofollow" />
+
+  <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN FACEBOOK-->
+  <meta property="og:image" content="url de la imagen" />
+  <meta property="og:title" content="titulo para la descripción" />
+  <meta property="og:description" content="descripción para facebook" />
+
+  <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN TWITTER-->
+  <meta property="twitter:image" content="url de la imagen" />
+  <meta property="twitter:title" content="titulo para la descripción" />
+  <meta property="twitter:description" content="descripción para facebook" />
+
+  <!--LINK PARA INSERTAR FAVICON-->
+  <link rel="shortcut icon" href="highSchoolStories/favicon-128x128.png" type="image/x-icon" />
+
+  <!--LINK A LA PÁGINA DE ESTILOS CSS-->
+  <link rel="stylesheet" href="css/COMPONENT_-_lesActivityMultipleChoice.css" />
+
+  <!--TÍTULO DE LA PÁGINA (APARECE EN EL NAVEGADOR ARRIBA)-->
+  <title>LondonEye - HighSchool Stories</title>
+</head>
+
+<!--
+   ___  ___  _____   __
+  | _ )/ _ \|   \ \ / /
+  | _ \ (_) | |) \ V / 
+  |___/\___/|___/ |_| 
+  -->
+
+<body>
+  <main class="gameBoard">
+
+    <!--ZONA DE JUEGO TOTAL-->
+    <!--ZONA DE JUEGO TOTAL-->
+    <!--ZONA DE JUEGO TOTAL-->
+    <section id="gameSection">
+      <!--DATOS BARRA SUPERIOR DE LA PANTALLA-->
+      <div id="barraSuperior">
+        <h1 id="gameTitle">LONDONEYE STORIES - LAST HOLIDAY</h1>
+      </div>
+
+      <!--DATOS BARRA MEDIA DE PANTALLA PARA RESPUESTAS-->
+      <div id="barraMedia">
+        <button class="answerContainer answersContainer" id="answerContainer1" data-code="4">Answer 1</button>
+
+        <button class="answerContainer answersContainer" id="answerContainer2" data-code="5">Answer 2</button>
+
+        <button class="answerContainer answersContainer" id="answerContainer3" data-code="6">Answer 3</button>
+      </div>
+
+      <!--GRÁFICOS DE LA PARTE INFERIOR DE LA PANTALLA-->
+      <div id="barraInferior">
+
+        <!-- IMAGEN IZQUIERDA-->
+        <div id="containerLeftGirl">
+          <img src="" alt="" id="imgGirlLeft" class="imgGirl" />
+        </div>
+
+        <!-- BOCADILLO CENTRO-->
+        <div id="containerBocadillo">
+          <p id="questionText">Text</p>
+        </div>
+
+        <!-- IMAGEN DERECHA-->
+        <div id="containerRightGirl">
+          <img src="" alt="" id="imgGirlRight" class="imgGirl" />
+        </div>
+      </div>
+    </section>
+
+    <script src="js/CONTENT_-_lesBase.js"></script>
+    <script src="js/CONTENT_-_lesDialogsAndQuestions_MyLastHoliday.js"></script>
+    <script src="js/COMPONENT_-_lesActivityMultipleChoice.js"></script>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/*  → CSS MENÚ 01 ←  */
+.section__1{
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+  }
+  li {
+    display: inline;
+  }
+  li a {
+    width: 60px;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: black;
+  }
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+}
+
+/*  → CSS MENÚ 02 ←  */
+.section__2{
+  ul {
+    /*border: 1px solid red;*/
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    list-style-type: none;
+    background-color: gray;
+    position: relative;
+  }
+  
+  li {
+    /*border: 1px solid blue;*/
+    padding: 8px 0;
+    border-right: 1px solid white;
+    margin: 0;
+  }
+  
+  a {
+    /*border: 1px solid green;*/
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+  }
+  a:hover {
+    background-color: black;
+  }
+  #flotante {
+    position: absolute;
+    right: 0;
+  }
+  
+}

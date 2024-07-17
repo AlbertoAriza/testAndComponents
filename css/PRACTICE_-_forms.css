@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+h1, h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto';
+}
+
+ul{
+    display: flex;
+    background-color: rgb(177, 176, 176);
+}
+li{
+    list-style-type: none;
+    padding: 5px 10px;
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+li:hover{
+    background-color: black;
+    color: white;
+}

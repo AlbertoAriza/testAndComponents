@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--META PARA LA DESCRIPCIÓN QUE APARECE EN GOOGLE CUANDO TE BUSCAN-->
+    <meta name="description" content="Descripción en Google" />
+
+    <!--META PARA AUTOR DE LA PÁGINA-->
+    <meta name="author" content="Jose Aberto Ariza" />
+
+    <!--META PARA LAS KEYWORDS DE LA PÁGINA-->
+    <meta
+      name="keywords"
+      content="palabra clave 1, palabra clave 2, palabra clave 3, etc"
+    />
+
+    <!--META PARA INDICACIONES AL ARCHIVO ROBOTS-->
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
+
+    <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN FACEBOOK-->
+    <meta property="og:image" content="url de la imagen" />
+    <meta property="og:title" content="titulo para la descripción" />
+    <meta property="og:description" content="descripción para facebook" />
+
+    <!--META QUE CONFORMA LA INFORMACIÓN CUANDO COMPARTEN TU LINK EN TWITTER-->
+    <meta property="twitter:image" content="url de la imagen" />
+    <meta property="twitter:title" content="titulo para la descripción" />
+    <meta property="twitter:description" content="descripción para facebook" />
+
+    <!--LINK PARA INSERTAR FAVICON-->
+    <link
+      rel="shortcut icon"
+      href="highSchoolStories/favicon-128x128.png"
+      type="image/x-icon"
+    />
+
+    <!--LINK A LA PÁGINA DE ESTILOS CSS-->
+    <link rel="stylesheet" href="css/Component_-_lesBase.css">
+    <link rel="stylesheet" href="css/COMPONENT_-_lesStartScreen.css" />
+
+    <!--TÍTULO DE LA PÁGINA (APARECE EN EL NAVEGADOR ARRIBA)-->
+    <title>LondonEye - HighSchool Stories</title>
+  </head>
+
+  <!--
+   ___  ___  _____   __
+  | _ )/ _ \|   \ \ / /
+  | _ \ (_) | |) \ V / 
+  |___/\___/|___/ |_| 
+  -->
+  <body>
+    <!--startScreenSection-->
+    <!--DOCUMENTACIÓN: En esta sección creamos la pantalla de inicio con el botón 'start game' y las
+      imágenes de los personajes que suben hacia arriba en una animación fluida.-->
+    <main id="gameBoard">
+
+      <section class="startScreenSection">
+        <!--startScreenSection_leftMenu-->
+        <!--DOCUMENTACIÓN: Este 'div' conforma la parte izquierda de la pantalla de la 'startScreenSection'.
+          Esta incluye el botón de inicio del juego.-->
+        <div class="startScreenSection_leftMenu">
+          <!--startScreenSection_leftMenu_leftMenuButton-->
+          <!--DOCUMENTACIÓN: Botón de inicio del juego.-->
+          <button class="startScreenSection_leftMenu_leftMenuButton">Start Game</button>
+        </div>
+        <!-------------------------------->
+
+        <!--startScreenSection_rightMenu-->
+        <!--DOCUMENTACIÓN: Este 'div' conforma la parte derecha de 'startScreenSection' con las imágenes que suben de una en una.-->
+        <div class="startScreenSection_rightMenu">
+            
+          <!--Div de img 1-->
+          <!--DOCUMENTACIÓN: Imagen de Akari que sube poco a poco.-->
+          <div class="startScreenSection_rightMenu_ImgContainer" id="startScreenSection_rightMenu_ImgContainer1">
+            <img src="highSchoolStories/girl1happy.png" alt="" class="startScreenSection_rightMenu_ImgContainer_img"/>
+          </div>
+            
+          <!--Div de img 2-->
+          <!--DOCUMENTACIÓN: Imagen de Sakura que sube poco a poco.-->
+          <div class="startScreenSection_rightMenu_ImgContainer" id="startScreenSection_rightMenu_ImgContainer2">
+            <img src="highSchoolStories/girl2happy.png" alt="" class="startScreenSection_rightMenu_ImgContainer_img"/>
+          </div>
+          
+          <!--Div de img 3-->
+          <!--DOCUMENTACIÓN: Imagen de Haruki que sube poco a poco.-->
+          <div class="startScreenSection_rightMenu_ImgContainer" id="startScreenSection_rightMenu_ImgContainer3">
+            <img src="highSchoolStories/boy1.png" alt="" class="startScreenSection_rightMenu_ImgContainer_img"/>
+          </div>
+          
+          <!--Div de img 4-->
+          <!--DOCUMENTACIÓN: Imagen de Mrs Himari que sube poco a poco.-->
+          <div class="startScreenSection_rightMenu_ImgContainer" id="startScreenSection_rightMenu_ImgContainer4">
+            <img src="highSchoolStories/teacher.png" alt="" class="startScreenSection_rightMenu_ImgContainer_img"/>
+          </div>
+        
+          <!--Div de img 5-->
+          <!--DOCUMENTACIÓN: Imagen de Headmistress que sube poco a poco.-->
+          <div class="startScreenSection_rightMenu_ImgContainer" id="startScreenSection_rightMenu_ImgContainer5">
+            <img src="highSchoolStories/headMaster01.png" alt="" class="startScreenSection_rightMenu_ImgContainer_img"/>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script src="js/COMPONENT_-_lesStartScreen.js"></script>
+
+  </body>
+</html>

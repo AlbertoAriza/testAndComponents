@@ -1,0 +1,35 @@
+/*___ ___ ___ ___ _____ ___ ___   __   __  ___ ___ ___ _      _   ___    ___ ___ _  _ ___ ___    _   _    ___ ___ 
+ | _ \ __/ __| __|_   _| __/ _ \  \ \ / / | _ \ __/ __| |    /_\ / __|  / __| __| \| | __| _ \  /_\ | |  | __/ __|
+ |   / _|\__ \ _|  | | | _| (_) |  \ V /  |   / _| (_ | |__ / _ \\__ \ | (_ | _|| .` | _||   / / _ \| |__| _|\__ \
+ |_|_\___|___/___| |_| |___\___/    |_|   |_|_\___\___|____/_/ \_\___/  \___|___|_|\_|___|_|_\/_/ \_\____|___|___/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --btnStartBorderColor: #f56800;
+    --btnStartBorderColorHover: #bc5800;
+    --btnStartTransparentColor: rgba(255, 255, 255, 0);
+    --btnStartTextColor: white;
+    --storyWhiteTransparentBackground: rgba(255, 255, 255, 0.5);
+    --btnGameAnswerColor: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(21, 68, 255), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorHover: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(50, 150, 255, 1), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorWrong: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 107, 107), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorRight: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(112, 255, 107), rgba(255, 255, 255, 0));
+    --borderContainerActiveColor: rgb(213, 227, 255);
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  .cursiva {
+    font-style: italic;
+  }
+
+  .gameBoard{
+    height: 100svh;
+  }

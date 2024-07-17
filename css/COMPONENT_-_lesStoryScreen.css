@@ -1,0 +1,82 @@
+/*___  _   _  _ _____ _   _    _      _     ___ _____ ___  _____   __
+ | _ \/_\ | \| |_   _/_\ | |  | |    /_\   / __|_   _/ _ \| _ \ \ / /
+ |  _/ _ \| .` | | |/ _ \| |__| |__ / _ \  \__ \ | || (_) |   /\ V / 
+ |_|/_/ \_\_|\_| |_/_/ \_\____|____/_/ \_\ |___/ |_| \___/|_|_\ |_|  
+*/
+
+/* CSS relativo a la pantalla en la que se van contando las historias */
+#storyContainer {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* → CSS DE TODO EL CONTAINER QUE CONTIENE FOTOS Y DIALOGO ← */
+#storyTellingContainer {
+  display: flex;
+  width: 100%;
+  height: 420px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--storyWhiteTransparentBackground);
+  padding-top: 20px;
+}
+
+/*  CSS DE LOS CONTENEDORES DE FOTOS*/
+.storyImgContainer{
+  width: 400px;
+  text-align: center;
+  align-self: baseline;
+}
+
+/*  CSS DE LAS FOTOS*/
+#storyImgLeft, #storyImgRight{
+  max-height: 400px;
+  animation: aparecerImgs 1s ease-out forwards;
+  opacity: 0;
+}
+#storyImgLeft {
+  transform: translateX(-100px);
+}
+#storyImgRight {
+  transform: translateX(100px);
+}
+
+@keyframes aparecerImgs {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*  CSS DEL CONTENEDOR DEL BOCADILLO DE TEXTO*/
+#storyTextContainer{
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* CSS DEL BOCADILLO DE TEXTO*/
+#storyText {
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-top: 5px solid blue;
+  cursor: pointer;
+}
+
+.bocadilloToLeft{
+  border-radius: 0 10px 10px 10px;
+  border-left: 5px solid blue;
+}
+
+.bocadilloToRight{
+  border-radius: 10px 0 10px 10px;
+  border-right: 5px solid blue;
+}

@@ -1,0 +1,105 @@
+/*___  _   _  _ _____ _   _    _      _     ___ _____ _   ___ _____ 
+ | _ \/_\ | \| |_   _/_\ | |  | |    /_\   / __|_   _/_\ | _ \_   _|
+ |  _/ _ \| .` | | |/ _ \| |__| |__ / _ \  \__ \ | |/ _ \|   / | |  
+ |_|/_/ \_\_|\_| |_/_/ \_\____|____/_/ \_\ |___/ |_/_/ \_\_|_\ |_|
+*/
+
+/* CSS DEL BOTÓN E IMÁGENES DE LA PANTALLA DE START */
+
+
+.startScreenSection {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../highSchoolStories/fondoPresentacion.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  
+/* parte izquierda del menú inicial */
+.startScreenSection_leftMenu {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.startScreenSection_leftMenu_leftMenuButton {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  width: 20vw;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient(to right, var(--btnStartTransparentColor), var(--btnStartBorderColor), var(--btnStartTransparentColor));
+  color: white;
+  border-width: 0;
+}
+  
+.startScreenSection_leftMenu_leftMenuButton:hover {
+  background: linear-gradient(to right, var(--btnStartTransparentColor), var(--btnStartBorderColorHover), var(--btnStartTransparentColor));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 3px solid rgb(213, 227, 255);
+  border-bottom: 3px solid rgb(213, 227, 255);
+}
+  
+/* Parte derecha del menú inicial que contiene las imágenes */
+.startScreenSection_rightMenu {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+  
+.startScreenSection_rightMenu_ImgContainer {
+  max-height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+  border-radius: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transform: translateY(800px);
+  animation: aparecerImgs 2s ease-out forwards;
+  opacity: 0;
+}
+  
+#startScreenSection_rightMenu_ImgContainer1 {
+  animation-delay: 1s;
+}
+
+#startScreenSection_rightMenu_ImgContainer2 {
+  animation-delay: 2s;
+}
+
+#startScreenSection_rightMenu_ImgContainer3 {
+  animation-delay: 3s;
+}
+#startScreenSection_rightMenu_ImgContainer4 {
+  animation-delay: 4s;
+}
+#startScreenSection_rightMenu_ImgContainer5 {
+  animation-delay: 5s;
+}
+
+ @keyframes aparecerImgs {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.startScreenSection_rightMenu_ImgContainer_img {
+  max-height: 190px;
+}

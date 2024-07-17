@@ -1,0 +1,119 @@
+/* ___ _           _     ___                      
+  / __| |_  ___ __| |__ / __| __ _ _ ___ ___ _ _  
+ | (__| ' \/ -_) _| / / \__ \/ _| '_/ -_) -_) ' \ 
+  \___|_||_\___\__|_\_\ |___/\__|_| \___\___|_||_|
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --btnStartBorderColor: #f56800;
+    --btnStartBorderColorHover: #bc5800;
+    --btnStartTransparentColor: rgba(255, 255, 255, 0);
+    --btnStartTextColor: white;
+    --storyWhiteTransparentBackground: rgba(255, 255, 255, 0.5);
+    --btnGameAnswerColor: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(21, 68, 255), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorHover: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(50, 150, 255, 1), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorWrong: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 107, 107), rgba(255, 255, 255, 0));
+    --btnGameAnswerColorRight: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(112, 255, 107), rgba(255, 255, 255, 0));
+    --borderContainerActiveColor: rgb(213, 227, 255);
+
+    --statsMainFont: 1.5em;
+    --statsMainColor1: rgb(0, 206, 0);
+    --statsSecondaryColor: gray;
+    --statSize: 132px;
+    --statWidth: 20px;
+  }
+  
+.gameBoard{
+    height: 100svh;
+  }
+
+  
+  #checkScreen--mainContainer {
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #checkScreen--whiteBlock {
+      width: 100%;
+      height: 420px;
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--storyWhiteTransparentBackground);
+    padding-top: 20px;
+  }
+
+  #checkScreen--textContainer{
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: 1px solid red;
+    width: 626px;
+    height: 352px;
+
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #checkScreen--text{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: var(--statsMainFont);
+  }
+
+  #checkScreen--imgContainer{
+    width: 400px;
+    text-align: center;
+    max-height: 100svh;
+  }
+
+
+  /* → CSS BARRA STATS ← */
+  [role="progressbar1"]{
+
+    font-size: 2rem;
+    width: var(--statSize);
+    aspect-ratio: 1 / 1;
+    background: conic-gradient(
+        var(--statsMainColor1) var(--progress1, 0),
+        var(--statsSecondaryColor) 0
+    );
+    margin: 2rem auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    &::after{
+        content: attr(aria-valuenow) "%";
+        background-color: white;
+        border-radius: inherit;
+        width: calc(100% - var(--statWidth));
+        aspect-ratio: 1 / 1;
+        display: grid;
+        place-items: center;
+    }
+
+    p{
+        display: none;
+    }
+}
+
+.statsTwinTitleContainer{
+    display: flex;
+    justify-content: space-around;
+}

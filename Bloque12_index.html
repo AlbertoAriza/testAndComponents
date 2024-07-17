@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Bloque12_style.css" />
+    <title>Bloque 12</title>
+  </head>
+  <body>
+
+    <!--  HEADER  -->
+    <header>
+      <h2>ACADEMIA LONDONEYE</h2>
+      <h1 class="h1Title">Tu centro de preparación Aptis en Córdoba</h1>
+      <h3>Centro de enseñanza adscrito al British Council nº</h3>
+      <nav id="menuNav">
+        <div class="menuLogo"></div>
+        <div class="menuMain">
+          <ul>
+            <li>Option 01</li>
+            <li>Option 02</li>
+            <li>Option 03</li>
+            <li>Option 04</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main id="main">
+
+      <!--SECTION 01-->
+      <section id="section01" class="Section__" designer="Alberto" data-version-number="3.0" >
+        <h2>Section 01</h2>
+      </section>
+
+      <!--SECTION 02-->
+      <section>
+        <h2>Section 02: Reloj</h2>
+        <div id="reloj">
+          <p id="reloj_p"></p>
+          <p id="reloj_p2"></p>
+        </div>
+      </section>
+
+      <!--SECTION 03-->
+      <section>
+        <h2>Section 03</h2>
+        <div class="test01">Probando</div>
+        <button class="btn_01">toggle</button>
+      </section>
+
+      <!--SECTION 04-->
+      <section>
+        <h2>Section 04</h2>
+        <div>
+          <p class="diceRolling_Result"></p>
+          <button id="diceRolling">Roll the Dice</button>
+        </div>
+      </section>
+
+    </main>
+
+    <!--  FOOTER  -->
+    <footer>
+      <p>Esto es el footer</p>
+    </footer>
+    <script src="js/Bloque12_script.js"></script>
+
+    <script>
+      let getTest01 = document.querySelector(".test01");
+
+      getTest01.innerHTML = "<p><span>Probando</span> ando</p>";
+      console.log(getTest01);
+    </script>
+  </body>
+</html>

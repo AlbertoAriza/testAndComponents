@@ -1,0 +1,162 @@
+/*___  _   _  _ _____ _   _    _      _     ___  ___      _ _   _ ___ ___  ___  
+ | _ \/_\ | \| |_   _/_\ | |  | |    /_\   |   \| __|  _ | | | | | __/ __|/ _ \ 
+ |  _/ _ \| .` | | |/ _ \| |__| |__ / _ \  | |) | _|  | || | |_| | _| (_ | (_) |
+ |_|/_/ \_\_|\_| |_/_/ \_\____|____/_/ \_\ |___/|___|  \__/ \___/|___\___|\___/ 
+*/
+
+#gameSection {
+  height: 100svh;
+  width: 10%0;
+  overflow: hidden;
+  flex-basis: 100vw;
+  height: 100%;
+  background-image: url(../highSchoolStories/fondoAula.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*___   _   ___ ___    _     ___ _   _ ___ ___ ___ ___ ___  ___ 
+ | _ ) /_\ | _ \ _ \  /_\   / __| | | | _ \ __| _ \_ _/ _ \| _ \
+ | _ \/ _ \|   /   / / _ \  \__ \ |_| |  _/ _||   /| | (_) |   /
+ |___/_/ \_\_|_\_|_\/_/ \_\ |___/\___/|_| |___|_|_\___\___/|_|_\
+ */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--storyWhiteTransparentBackground);
+  border-bottom: 5px solid black;
+}
+
+/*___   _   ___ ___    _     __  __ ___ ___ ___   _   
+ | _ ) /_\ | _ \ _ \  /_\   |  \/  | __|   \_ _| /_\  
+ | _ \/ _ \|   /   / / _ \  | |\/| | _|| |) | | / _ \ 
+ |___/_/ \_\_|_\_|_\/_/ \_\ |_|  |_|___|___/___/_/ \_\
+*/
+#barraMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--storyWhiteTransparentBackground);
+}
+
+/*  CONFIGURACIÓN DE LOS BOTONES DE RESPUESTAS*/
+.answerContainer{
+  border: none;
+  background: var(--btnGameAnswerColor);
+  font-size: 1.3em;
+  text-align: center;
+  padding: 10px;
+  width: 90vw;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+.answersContainer:hover {
+  background: var(--btnGameAnswerColorHover);
+}
+.answerContainer:active {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 3px solid var(--borderContainerActiveColor);
+  border-bottom: 3px solid var(--borderContainerActiveColor);
+}
+
+.incorrectAnswerChosen {
+  font-size: 1.3em;
+  text-align: center;
+  background: var(--btnGameAnswerColorWrong);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 90vw;
+  cursor: pointer;
+  position: relative;
+  border-top: 3px solid var(--borderContainerActiveColor);
+  border-bottom: 3px solid var(--borderContainerActiveColor);;
+}
+.incorrectAnswer {
+  font-size: 1.3em;
+  text-align: center;
+  background: var(--btnGameAnswerColorWrong);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90vw;
+  cursor: pointer;
+  position: relative;
+}
+
+.correctAnswerChosen {
+  font-size: 1.3em;
+  text-align: center;
+  background: var(--btnGameAnswerColorRight);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 90vw;
+  cursor: pointer;
+  position: relative;
+  border-top: 3px solid var(--borderContainerActiveColor);;
+  border-bottom: 3px solid var(--borderContainerActiveColor);;
+}
+.correctAnswer {
+  font-size: 1.3em;
+  text-align: center;
+  background: var(--btnGameAnswerColorRight);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90vw;
+  cursor: pointer;
+  position: relative;
+}
+
+/*___   _   ___ ___    _     ___ _  _ ___ ___ ___ ___ ___  ___ 
+ | _ ) /_\ | _ \ _ \  /_\   |_ _| \| | __| __| _ \_ _/ _ \| _ \
+ | _ \/ _ \|   /   / / _ \   | || .` | _|| _||   /| | (_) |   /
+ |___/_/ \_\_|_\_|_\/_/ \_\ |___|_|\_|_| |___|_|_\___\___/|_|_\
+*/
+#barraInferior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*BARRA INFERIOR - CONTAINER IZQUIERDO*/
+#containerLeftGirl {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.imgGirl {
+  max-height: 250px;
+}
+
+/*BARRA INFERIOR - CONTAINER CENTRO*/
+#containerBocadillo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#questionText {
+  padding: 20px;
+  border-top: 5px solid blue;
+  border-right: 5px solid blue;
+  border-radius: 10px 0 10px 10px;
+  background-color: white;
+  font-size: 1.5em;
+  text-align: center;
+  min-width: 80%;
+}
+
+/*BARRA INFERIOR - CONTAINER DERECHO*/
+#containerRightGirl {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}

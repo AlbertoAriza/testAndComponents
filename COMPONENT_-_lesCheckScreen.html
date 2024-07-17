@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/COMPONENT_-_lesCheckScreen.css">
+    <title>Check Screen</title>
+</head>
+<body>
+    <main class="gameBoard"> <!-- Este es el container que no se tocará nunca. Demarca la pantalla del juego.-->
+        <section id="checkScreen--mainContainer"> <!--  Este es el container que contiene la foto en la historia. 
+                                            Tan grande como #gameBoard-->
+  
+          <div id="checkScreen--whiteBlock">
+  
+            <!--  Container del texto de la charla. -->
+            <div id="checkScreen--textContainer">
+                <p id="checkScreen--text">Text</p>
+                <!--twin stats-->
+                <div id="progressbarContainer">
+                    <div class="progressbar1">
+                        <p>Only works with JS enabled</p>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Foto del personaje de la derecha. -->
+            <div id="checkScreen--imgContainer">
+              <img src="../highSchoolStories/gameMaster.png" alt="" id="checkScreen--img" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <script src="js/COMPONENT_-_lesCheckScreen.js"></script>
+</body>
+</html>
